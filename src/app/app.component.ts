@@ -21,9 +21,9 @@ export class AppComponent implements OnInit {
 
   constructor(private empService: EmployeeService,private fb: FormBuilder,private translate: TranslateService){
     
-    this.translate.addLangs(['en']);
+    this.translate.addLangs(['en','fr']);
     this.translate.setDefaultLang("en");
-    this.translate.use("en");
+    this.translate.use("fr");
     
     this.EmployeeFormGroup = this.fb.group({
       id: [0],
